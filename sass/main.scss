@@ -2,19 +2,38 @@
 
 
 //Helper
+@import "./Helper/minxin";
+@import "./Helper/variables";
 
 
 //Base
+@import "./Base/customize";
+@import "./Base/reset";
+@import "./Base/responsive";
+
+
 
 
 //components
+@import "./Components/button";
+@import "./Components/scrollbutton";
 
 
 //layouts
+@import "./Layouts/header";
+@import "./Layouts/carousel";
+@import "./Layouts/product";
+@import "./Layouts/footer";
+
+
 
 
 
 //Pages
-// _register.scss
+@import "./Pages/cart/cart";
+@import "./Pages/detail/detail";
+@import "./Pages/home/home";
+@import "./Pages/register/register";
+
 
 //Theme

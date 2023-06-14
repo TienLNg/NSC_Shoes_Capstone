@@ -1,0 +1,11 @@
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    color: white;
+    box-shadow: 0 0 8px #d0147f;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1);
+    }
+}

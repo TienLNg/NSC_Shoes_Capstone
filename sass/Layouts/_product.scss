@@ -1,0 +1,89 @@
+.productsShoes {
+    // width: 100%;
+    // padding: 25px;
+    margin: 30px;
+
+    
+    h1 {
+        margin: 35px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        @include styleText($color-dark-2, $fs-8, $fw-4);
+    }
+    .box {
+        // width: 100%;
+        margin: auto;   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+    .card {
+        width: 265px;
+        height: 440px;
+        box-shadow: 0 0 6px #d0147f;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px 10px;
+        background: #e7e7e7;
+    }
+    .box .card .small_card {
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        margin: 10px 0;
+        transform: translateX(-20px);
+        transition: 0.3s;
+        opacity: 0;
+    }
+    .box .card:hover .small_card {
+        transform: translateX(2px);
+        cursor: pointer;
+        opacity: 1;
+    }
+    .box .card .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box .card .image img {
+        width: 150px;
+        margin: 15px 0;
+        transition: 0.3s;
+       
+    }
+    .box .card:hover .image img {
+        transform: scale(1.1);
+    }
+    .box .card .small_card i {
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 18px;
+        margin: 2px 0;
+        line-height: 40px;
+        border: 2px solid #999999;
+        transition: 0.2s;
+    }
+    .small_card i:hover {
+        color: #c72092;
+    }
+    .products_text h2 {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .products_text p {
+        color: $color-dark-1;
+        line-height: 21px;
+        margin: 8px 0;
+    }
+    h3 {
+        margin: 7px 0;
+    }
+    .products_star {
+        color: orange;
+        margin-bottom: 19px;
+        cursor: pointer;
+    }
+   
+}

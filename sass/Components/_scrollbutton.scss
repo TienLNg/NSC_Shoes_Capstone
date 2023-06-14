@@ -1,0 +1,27 @@
+/** SCROLL UP BUTTON */
+#backToTop .backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    transition: 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#backToTop .backToTopBtn i {
+    font-size: 13px;
+    color: #fa009e;
+}
+
+#backToTop .backToTopBtn .show {
+    visibility: visible;
+    opacity: 1;
+}
