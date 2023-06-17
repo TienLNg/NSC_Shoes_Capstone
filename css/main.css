@@ -25,29 +25,29 @@ html, body {
 }
 
 /** SCROLL UP BUTTON */
-#backToTop .backToTopBtn {
+.backToTopBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
-  line-height: 50px;
+  line-height: 60px;
+  background-color: transparent;
   text-align: center;
   cursor: pointer;
   z-index: 1000;
   border: none;
   outline: none;
-  transition: 0.3s ease-out;
+  transition: all 0.5s;
   visibility: hidden;
   opacity: 0;
 }
-
-#backToTop .backToTopBtn i {
-  font-size: 13px;
+.backToTopBtn i {
+  font-size: 40px;
   color: #fa009e;
 }
 
-#backToTop .backToTopBtn .show {
+.show {
   visibility: visible;
   opacity: 1;
 }
@@ -127,6 +127,49 @@ header {
 @media screen and (max-width: 992px) {
   header .nav-link {
     text-align: center;
+  }
+  header .navbar-toggler {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    background-color: #121212;
+    border-radius: 4px;
+    text-align: center;
+  }
+  header i::before {
+    color: rgb(255, 0, 153);
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav-link {
+    text-align: center;
+  }
+  header .navbar-toggler {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    background-color: #121212;
+    border-radius: 4px;
+    text-align: center;
+  }
+  header i::before {
+    color: rgb(255, 0, 153);
+  }
+}
+@media screen and (max-width: 576px) {
+  header .nav-link {
+    text-align: center;
+  }
+  header .navbar-toggler {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    background-color: #121212;
+    border-radius: 4px;
+    text-align: center;
+  }
+  header i::before {
+    color: rgb(255, 0, 153);
   }
 }
 .carouselShoes {
@@ -220,13 +263,36 @@ header {
   cursor: pointer;
 }
 
+@media screen and (max-width: 992px) {
+  .productsShoes h1 {
+    text-align: center;
+  }
+  .productsShoes .box {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .productsShoes h1 {
+    text-align: center;
+  }
+  .productsShoes .box {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .productsShoes h1 {
+    text-align: center;
+  }
+  .productsShoes .box {
+    text-align: center;
+  }
+}
 /* FOOTER */
-.corpFooter {
+.shoesFooter {
   background: #151421;
   border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
-
-.corpFooter .footer-col-1 .footer-logo .navbar-brand {
+.shoesFooter .footer-col-1 .footer-logo .navbar-brand {
   margin: 0;
   padding: 0;
   color: #fff;
@@ -235,8 +301,7 @@ header {
   line-height: 47px;
   opacity: 1;
 }
-
-.corpFooter .footer-col-1 .footer-logo a p {
+.shoesFooter .footer-col-1 .footer-logo .navbar-brand a p {
   color: #fff;
   font-size: 30px;
   font-weight: 600;
@@ -246,7 +311,7 @@ header {
   opacity: 1;
 }
 
-.corpFooter .footer-col-1 .footer-logo span {
+.shoesFooter .footer-col-1 .footer-logo span {
   display: block;
   font-size: 14px;
   font-weight: 600;
@@ -255,13 +320,13 @@ header {
   text-transform: none;
 }
 
-.corpFooter .footer-col-1 p {
+.shoesFooter .footer-col-1 p {
   font-size: 18px;
   line-height: 28px;
   color: #97a1a9;
 }
 
-.corpFooter .footer-col-1 .footer-social a {
+.shoesFooter .footer-col-1 .footer-social a {
   color: #97a1a9;
   text-decoration: none;
   text-align: center;
@@ -274,12 +339,12 @@ header {
   opacity: 0.6;
 }
 
-.corpFooter .footer-col-1 .footer-social a:hover {
+.shoesFooter .footer-col-1 .footer-social a:hover {
   color: rgb(255, 0, 153);
   opacity: 1;
 }
 
-.corpFooter .footer-col h5 {
+.shoesFooter .footer-col h5 {
   position: relative;
   color: #fff;
   font-size: 22px;
@@ -290,47 +355,55 @@ header {
   margin-bottom: 25px;
 }
 
-.corpFooter .footer-col ul {
+.shoesFooter .footer-col ul {
   list-style: none;
 }
 
-.corpFooter .footer-col li {
+.shoesFooter .footer-col li {
   font-size: 18px;
   line-height: 28px;
   color: #97a1a9;
 }
 
-.corpFooter .footer-col a {
+.shoesFooter .footer-col a {
   text-decoration: none;
   color: #97a1a9;
   opacity: 0.8;
   transition: all 0.3s;
 }
 
-.corpFooter .footer-col a:hover {
+.shoesFooter .footer-col a:hover {
   color: rgb(255, 0, 153);
   opacity: 1;
 }
 
 /* COPYRIGHT */
-.corpCopyright {
-  padding: 1.5em 0;
+.Copyright {
+  padding: 10px;
   border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
-
-.corpCopyright p {
+.Copyright p {
   color: #7f8a94;
   font-size: 17px;
   letter-spacing: 0.5px;
+  margin: 0;
   opacity: 1;
 }
 
-.corpCopyright a {
+.Copyright a {
   text-decoration: none;
   color: rgb(255, 0, 153);
   transition: all 0.3s;
 }
-
-.corpCopyright a:hover {
+.Copyright a:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .shoesFooter .footer-col-1 {
+    text-align: center;
+  }
+  .shoesFooter .Copyright {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

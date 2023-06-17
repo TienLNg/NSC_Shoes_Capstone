@@ -5,7 +5,7 @@ window.onscroll = function() {
 };
 
 // Get the header and back to top
-var header = document.getElementById("corpHeader");
+var header = document.getElementById("Header");
 var backTop = document.getElementById("backToTop");
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
@@ -34,7 +34,7 @@ function scrollUp() {
 
 // Navbar toggle function (for device with width <= 981px)
 function toggleNavbar() {
-    var body = document.getElementById("corpBody");
+    var body = document.getElementById("Body");
     // Change background color
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.classList.toggle("active-scroll");

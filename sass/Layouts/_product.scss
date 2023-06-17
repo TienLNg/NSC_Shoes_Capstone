@@ -87,3 +87,36 @@
     }
    
 }
+
+@include resposive("large") {
+    .productsShoes {
+        h1 {
+            text-align: center;
+        }
+        .box {
+            text-align: center;
+        }
+    }
+}
+
+@include resposive("medium") {
+    .productsShoes {
+        h1 {
+            text-align: center;
+        }
+        .box {
+            text-align: center;
+        }
+    }
+}
+
+@include resposive("small") {
+    .productsShoes {
+        h1 {
+            text-align: center;
+        }
+        .box {
+            text-align: center;
+        }
+    }
+}
