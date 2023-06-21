@@ -4,6 +4,12 @@
     font-size: $fs;
     font-weight: $fw;
 }
+@mixin style-Text($fntSize,$fntWeight,$color,$letSpace){
+    font-size: $fntSize;
+    font-weight:$fntWeight ;
+    color:$color ;
+    letter-spacing:$letSpace ;
+    }
 
 @mixin styleButton($bg, $pd, $pd2, $border, $radius) {
     background: $bg;

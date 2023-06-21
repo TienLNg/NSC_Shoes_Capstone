@@ -1,0 +1,183 @@
+#my-cart{
+    .cart{
+       h1{
+        @include style-Text(30px,normal,#272727,0);
+       } 
+       .cart__detail{
+        background-color: #fafafa;
+        padding: 15px;
+        .cart--table{
+            background-color: #fff;
+            padding: 10px 0;
+            margin-bottom: 1rem;
+            .item--size{
+                color: #777;
+                font-size: 13px;
+            }
+            .num--total{
+                color: #a73340;
+                font-weight: bold;
+            }
+        }   
+        
+    }
+    .continute--buy{
+        transition: all .5s;
+        &:hover{
+            color: rgb(199,21,133);
+
+        }
+    }
+    .cart__total{
+        border: 1px solid #dfe0e1 ;
+        padding: 15px;
+        h3{
+            @include style-Text(17px,bold,#272727,1px);
+            border-bottom: 1px dotted #dfe0e1;
+        }
+        .total--pay{
+            border-bottom: 1px dotted #dfe0e1;
+            @include style-Text(14px,bold,#272727,0)
+        }
+        p{
+            @include style-Text(14px,normal,#777,0)
+        }
+        button{
+            position: relative;
+            background-color: transparent;
+            padding: 10px 35px;
+            border: 1px solid #000;
+        
+       &:focus{
+            outline: 5px auto ;
+            outline-offset: -2px;
+        }
+        & span{
+            color: white;
+            position: relative;
+            font-size: 14px;
+        }
+
+        &:hover span{
+            color: #000;
+        }
+        &::before{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: #000;
+            content: "";
+            height: 100%;
+            width: 100%;
+            transition: width .25s ease-in 0s;
+    
+        }
+        
+        &:hover::before {
+            width: 0;
+        }
+        }
+    }
+    .btn{
+        padding: 10px 13px;
+    }
+    }
+    .product-relative,.experience{
+        h2{
+            @include style-Text(28px,normal,#272727,2px);
+            position: relative;
+            display: inline-block;
+            &::after{
+                content: "";
+                position: absolute;
+                background: #000;
+                display: block;
+                width: 55px;
+                height: 1px;
+                margin: 20px auto;
+                left: 0;
+                right: 0;
+               }
+        }
+    }
+    .gallery-item{
+        img{
+            border-bottom: solid 1px #dfe0e1;
+        }
+        .card-body{
+            background-color: #fafafa;
+            h5{
+                font-size: 1rem;
+            }
+            p{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//reponsive
+@media screen and (max-width: 1198.98px) {
+    
+    #my-cart{
+        h1{
+            font-size: 27px !important;
+        }
+        font-size: 0.875rem;
+        .num-select{
+            .input-group{
+                width: 120%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    #my-cart{
+        .num-select{
+            .input-group{
+                width: 50%;
+                margin-left: 2rem;
+            }
+        }
+        .product-relative,.experience{
+            h2{
+            font-size: 25px;
+            &::after{
+                width: 45px;
+                margin: 10px auto;
+               }
+            }
+        }
+    }
+}
+@media screen and (max-width: 575.98px) {
+    #my-cart{
+        h1{
+            font-size: 25px !important;
+        }
+        .product-relative,.experience{
+            h2{
+            font-size: 20px;
+            &::after{
+                width: 40px;
+                margin: 8px auto;
+               }
+            }
+        }
+        .num-select{
+            .input-group{
+                width: 55%;
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375.98px) {
+    #my-cart{
+        .cart{
+            .btn{
+                padding: 7px 10px;
+            }
+        }
+    }
+}

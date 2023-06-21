@@ -12,6 +12,27 @@ html, body {
   background-color: #f5f9fe;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+}
+textarea:focus-visible {
+  outline: none;
+}
+
 .btn {
   text-decoration: none;
   padding: 10px 20px;
@@ -406,4 +427,432 @@ header {
   .shoesFooter .Copyright {
     text-align: center;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+#my-cart .cart h1 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #272727;
+  letter-spacing: 0;
+}
+#my-cart .cart .cart__detail {
+  background-color: #fafafa;
+  padding: 15px;
+}
+#my-cart .cart .cart__detail .cart--table {
+  background-color: #fff;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+}
+#my-cart .cart .cart__detail .cart--table .item--size {
+  color: #777;
+  font-size: 13px;
+}
+#my-cart .cart .cart__detail .cart--table .num--total {
+  color: #a73340;
+  font-weight: bold;
+}
+#my-cart .cart .continute--buy {
+  transition: all 0.5s;
+}
+#my-cart .cart .continute--buy:hover {
+  color: rgb(199, 21, 133);
+}
+#my-cart .cart .cart__total {
+  border: 1px solid #dfe0e1;
+  padding: 15px;
+}
+#my-cart .cart .cart__total h3 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #272727;
+  letter-spacing: 1px;
+  border-bottom: 1px dotted #dfe0e1;
+}
+#my-cart .cart .cart__total .total--pay {
+  border-bottom: 1px dotted #dfe0e1;
+  font-size: 14px;
+  font-weight: bold;
+  color: #272727;
+  letter-spacing: 0;
+}
+#my-cart .cart .cart__total p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  letter-spacing: 0;
+}
+#my-cart .cart .cart__total button {
+  position: relative;
+  background-color: transparent;
+  padding: 10px 35px;
+  border: 1px solid #000;
+}
+#my-cart .cart .cart__total button:focus {
+  outline: 5px auto;
+  outline-offset: -2px;
+}
+#my-cart .cart .cart__total button span {
+  color: white;
+  position: relative;
+  font-size: 14px;
+}
+#my-cart .cart .cart__total button:hover span {
+  color: #000;
+}
+#my-cart .cart .cart__total button::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #000;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transition: width 0.25s ease-in 0s;
+}
+#my-cart .cart .cart__total button:hover::before {
+  width: 0;
+}
+#my-cart .cart .btn {
+  padding: 10px 13px;
+}
+#my-cart .product-relative h2, #my-cart .experience h2 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #272727;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+#my-cart .product-relative h2::after, #my-cart .experience h2::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  display: block;
+  width: 55px;
+  height: 1px;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+}
+#my-cart .gallery-item img {
+  border-bottom: solid 1px #dfe0e1;
+}
+#my-cart .gallery-item .card-body {
+  background-color: #fafafa;
+}
+#my-cart .gallery-item .card-body h5 {
+  font-size: 1rem;
+}
+#my-cart .gallery-item .card-body p {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1198.98px) {
+  #my-cart {
+    font-size: 0.875rem;
+  }
+  #my-cart h1 {
+    font-size: 27px !important;
+  }
+  #my-cart .num-select .input-group {
+    width: 120%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #my-cart .num-select .input-group {
+    width: 50%;
+    margin-left: 2rem;
+  }
+  #my-cart .product-relative h2, #my-cart .experience h2 {
+    font-size: 25px;
+  }
+  #my-cart .product-relative h2::after, #my-cart .experience h2::after {
+    width: 45px;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  #my-cart h1 {
+    font-size: 25px !important;
+  }
+  #my-cart .product-relative h2, #my-cart .experience h2 {
+    font-size: 20px;
+  }
+  #my-cart .product-relative h2::after, #my-cart .experience h2::after {
+    width: 40px;
+    margin: 8px auto;
+  }
+  #my-cart .num-select .input-group {
+    width: 55%;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 375.98px) {
+  #my-cart .cart .btn {
+    padding: 7px 10px;
+  }
+}
+#my-detail-item .detail__left .col-2 img {
+  border: 1px solid #dfe0e1;
+  margin-bottom: 10px;
+}
+#my-detail-item .detail__left .col-2 img:hover {
+  border-color: #272727;
+}
+#my-detail-item .detail__left .col-10 img {
+  border: 1px solid #dfe0e1;
+  margin-bottom: 10px;
+}
+#my-detail-item .detail__right h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #272727;
+  letter-spacing: 0;
+  padding: 0 0 10px;
+  border-bottom: 1px dotted #dfe0e1;
+}
+#my-detail-item .detail__right .price-item {
+  font-size: 18px;
+  font-weight: bold;
+  color: #272727;
+  letter-spacing: 0;
+  padding: 10px 0;
+  border-bottom: 1px dotted #dfe0e1;
+  display: block;
+}
+#my-detail-item .detail__right .select-size {
+  padding: 10px 0;
+  border-bottom: 1px dotted #dfe0e1;
+}
+#my-detail-item .detail__right .select-size .btn-secondary {
+  background-color: white;
+  color: #272727;
+}
+#my-detail-item .detail__right .select-size .btn-secondary:hover, #my-detail-item .detail__right .select-size .btn-secondary:focus {
+  background-color: #272727;
+  color: white;
+  box-shadow: none;
+}
+#my-detail-item .detail__right .num-select .form-control {
+  width: 15%;
+  flex: none;
+}
+#my-detail-item .detail__right .num-select .form-control:focus {
+  box-shadow: none;
+}
+#my-detail-item .detail__right .btn-add-card {
+  position: relative;
+  background-color: transparent;
+  padding: 10px 35px;
+  border: 1px solid rgb(199, 21, 133);
+}
+#my-detail-item .detail__right .btn-add-card:focus {
+  outline: 5px auto;
+  outline-offset: -2px;
+}
+#my-detail-item .detail__right .btn-add-card span {
+  color: white;
+  position: relative;
+  font-size: 14px;
+}
+#my-detail-item .detail__right .btn-add-card:hover span {
+  color: #000;
+}
+#my-detail-item .detail__right .btn-add-card::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgb(199, 21, 133);
+  content: "";
+  height: 100%;
+  width: 100%;
+  transition: width 0.25s ease-in 0s;
+}
+#my-detail-item .detail__right .btn-add-card:hover::before {
+  width: 0;
+}
+#my-detail-item .product-relative h2, #my-detail-item .experience h2 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #272727;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+#my-detail-item .product-relative h2::after, #my-detail-item .experience h2::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  display: block;
+  width: 55px;
+  height: 1px;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+}
+#my-detail-item .gallery-item img {
+  border-bottom: solid 1px #dfe0e1;
+}
+#my-detail-item .gallery-item .card-body {
+  background-color: #fafafa;
+}
+#my-detail-item .gallery-item .card-body h5 {
+  font-size: 1rem;
+}
+#my-detail-item .gallery-item .card-body p {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767.98px) {
+  #my-detail-item .product-relative h2, #my-detail-item .experience h2 {
+    font-size: 25px;
+  }
+  #my-detail-item .product-relative h2::after, #my-detail-item .experience h2::after {
+    width: 45px;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  #my-detail-item .product-relative h2, #my-detail-item .experience h2 {
+    font-size: 20px;
+  }
+  #my-detail-item .product-relative h2::after, #my-detail-item .experience h2::after {
+    width: 40px;
+    margin: 8px auto;
+  }
+}
+#my-register .register h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #272727;
+  letter-spacing: 2px;
+}
+#my-register .register h1::after {
+  content: "";
+  background: #000;
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-top: 30px;
+}
+#my-register .register .register__form {
+  padding: 0 15px;
+}
+#my-register .register .register__form input[type=text], #my-register .register .register__form input[type=password] {
+  height: 55px;
+  background: #ededed;
+  color: #272727;
+  padding: 0 20px;
+  border-radius: 0;
+}
+#my-register .register .register__form input[type=text]:focus, #my-register .register .register__form input[type=password]:focus {
+  border-color: #ededed;
+  box-shadow: none;
+  background: #fff;
+}
+#my-register .register .register__form .form-check-input:checked {
+  background-color: black;
+  border-color: #000;
+}
+#my-register .register .register__form .form-check-input:checked:focus {
+  box-shadow: none;
+}
+#my-register .register .register__form span {
+  color: red;
+  margin-top: 5px;
+  display: block;
+}
+#my-register .register .register__form button {
+  position: relative;
+  background-color: transparent;
+  padding: 10px 35px;
+  border: 1px solid #000;
+}
+#my-register .register .register__form button:focus {
+  outline: 5px auto;
+  outline-offset: -2px;
+}
+#my-register .register .register__form button span {
+  color: white;
+  position: relative;
+  font-size: 14px;
+}
+#my-register .register .register__form button:hover span {
+  color: #000;
+}
+#my-register .register .register__form button::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #000;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transition: width 0.25s ease-in 0s;
+}
+#my-register .register .register__form button:hover::before {
+  width: 0;
+}
+#my-register .register .register__form .return-home a {
+  transition: all 0.5s;
+}
+#my-register .register .register__form .return-home a:hover {
+  color: rgb(199, 21, 133);
+}
+#my-register .experience h2 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #272727;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+#my-register .experience h2::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  display: block;
+  width: 55px;
+  height: 1px;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 991.98px) {
+  #my-register .register h1::after {
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #my-register .register h1 {
+    font-size: 30px;
+  }
+  #my-register .register h1::after {
+    width: 40px;
+    height: 2px;
+    margin-top: 10px;
+  }
+  #my-register .experience h2 {
+    font-size: 25px;
+  }
+  #my-register .experience h2::after {
+    width: 40px;
+    margin: 8px auto;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  #my-register .register h1 {
+    font-size: 22px;
+  }
+  #my-register .register h1::after {
+    width: 30px;
+  }
+  #my-register .experience h2 {
+    font-size: 20px;
+  }
+  #my-register .experience h2::after {
+    width: 45px;
+    margin: 10px auto;
+  }
+}

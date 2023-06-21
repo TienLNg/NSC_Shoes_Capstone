@@ -1,0 +1,163 @@
+#my-register{
+    .register{
+        h1{
+            @include style-Text(38px,bold,#272727,2px);
+            &::after{
+             content: "";
+             background: #000;
+             display: block;
+             width: 60px;
+             height: 4px;
+             margin-top: 30px;
+            }
+        }
+        .register__form{
+            padding: 0 15px;
+            input[type=text],input[type=password]{
+                height: 55px;
+                background: #ededed;
+                color: #272727;
+                padding: 0 20px;
+                border-radius: 0;
+                &:focus{
+                    border-color: #ededed;
+                    box-shadow: none;
+                    background: #fff;
+                }
+            }
+            .form-check-input:checked{
+                background-color: black;
+                border-color: #000;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            span{
+                color: red;
+                margin-top: 5px;
+                display: block;
+            }
+            button{
+                
+                position: relative;
+                background-color: transparent;
+                padding: 10px 35px;
+                border: 1px solid #000;
+            
+           &:focus{
+                outline: 5px auto ;
+                outline-offset: -2px;
+            }
+            & span{
+                color: white;
+                position: relative;
+                font-size: 14px;
+            }
+
+            &:hover span{
+                color: #000;
+            }
+            &::before{
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: #000;
+                content: "";
+                height: 100%;
+                width: 100%;
+                transition: width .25s ease-in 0s;
+        
+            }
+            
+            &:hover::before {
+                width: 0;
+            }
+      }
+      .return-home{
+        a{
+            transition: all 0.5s ;
+            &:hover{
+                color: rgb(199,21,133);
+            }
+        }
+      }
+    }
+}
+    
+    .experience{
+        h2{
+            @include style-Text(28px,normal,#272727,2px);
+            position: relative;
+            display: inline-block;
+            &::after{
+                content: "";
+                position: absolute;
+                background: #000;
+                display: block;
+                width: 55px;
+                height: 1px;
+                margin: 20px auto;
+                left: 0;
+                right: 0;
+               }
+        }
+    }
+}
+
+//reponsive
+@media screen and (max-width: 991.98px) {
+    #my-register{
+        .register{
+            h1{
+                &::after{
+                margin:20px auto;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    #my-register{
+        .register{
+            h1{
+                font-size: 30px;
+                &::after{
+                    width: 40px;
+                    height: 2px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .experience{
+            h2{
+            font-size: 25px;
+            &::after{
+                width: 40px;
+                margin: 8px auto;
+               }
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 575.98px) {
+    #my-register{
+        .register{
+            h1{
+                font-size: 22px;
+                &::after{
+                    width: 30px;
+                }
+            }
+        }
+        .experience{
+            h2{
+            font-size: 20px;
+            &::after{
+                width: 45px;
+                margin: 10px auto;
+               }
+            }
+        }
+    }
+}

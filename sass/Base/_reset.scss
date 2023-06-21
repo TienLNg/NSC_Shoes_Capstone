@@ -13,3 +13,20 @@ html,body{
 
     background-color:$color-white-1;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+textarea{
+    resize: none;
+    padding: 10px;
+    &:focus-visible{
+        outline: none;
+    }
+}
