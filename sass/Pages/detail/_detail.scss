@@ -1,101 +1,108 @@
-#my-detail-item{
-    .detail__left{
-        .col-2{
-            img{
-                border:1px solid #dfe0e1;
+.detail__right {
+    .select-size {
+        padding: 10px 0;
+        border-bottom: 1px dotted #dfe0e1;
+        .btn-secondary {
+            background-color: white;
+            color: #272727;
+            &:hover,
+            &:focus {
+                background-color: #272727;
+                color: white;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.btn-outline-secondary {
+    text-decoration: none;
+    padding: 20px;
+    background-color: #fafafa;
+}
+#my-detail-item {
+    .detail__left {
+        .col-2 {
+            img {
+                border: 1px solid #dfe0e1;
                 margin-bottom: 10px;
-                &:hover{
+                &:hover {
                     border-color: #272727;
                 }
             }
         }
-        .col-10{
-            img{
-                border:1px solid #dfe0e1;
-                margin-bottom: 10px;   
-           }
+        .col-10 {
+            img {
+                border: 1px solid #dfe0e1;
+                margin-bottom: 10px;
+            }
         }
-       
     }
-    .detail__right{
-        h2{
-            @include style-Text(20px,bold,#272727,0);
+    .detail__right {
+        h2 {
+            @include style-Text(20px, bold, #272727, 0);
             padding: 0 0 10px;
             border-bottom: 1px dotted #dfe0e1;
         }
-        .price-item{
-            @include style-Text(18px,bold,#272727,0);
+        .price-item {
+            @include style-Text(18px, bold, #272727, 0);
             padding: 10px 0;
             border-bottom: 1px dotted #dfe0e1;
             display: block;
         }
-        .select-size{
-            padding: 10px 0;
-            border-bottom: 1px dotted #dfe0e1;
-            .btn-secondary{
-                background-color: white;
-                color: #272727;
-                &:hover,&:focus{
-                    background-color: #272727;
-                    color: white;
+
+        .num-select {
+            .form-control {
+                width: 15%;
+                flex: none;
+                &:focus {
                     box-shadow: none;
                 }
             }
-           
+            
         }
-        .num-select{
-            .form-control{
-                width: 15%;
-                flex: none;
-            &:focus{
-                box-shadow: none;
-            }
-            }
-
-        }
-        .btn-add-card{
-                
+        .btn-add-card {
             position: relative;
             background-color: transparent;
             padding: 10px 35px;
-            border: 1px solid rgb(199,21,133);
-        
-       &:focus{
-            outline: 5px auto ;
-            outline-offset: -2px;
-        }
-        & span{
-            color: white;
-            position: relative;
-            font-size: 14px;
-        }
+            border: 1px solid rgb(199, 21, 133);
 
-        &:hover span{
-            color: #000;
+            &:focus {
+                outline: 5px auto;
+                outline-offset: -2px;
+            }
+            & span {
+                color: white;
+                position: relative;
+                font-size: 14px;
+            }
+
+            &:hover span {
+                color: #000;
+            }
+            &::before {
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: rgb(199, 21, 133);
+                content: "";
+                height: 100%;
+                width: 100%;
+                transition: width 0.25s ease-in 0s;
+            }
+
+            &:hover::before {
+                width: 0;
+            }
         }
-        &::before{
-            position: absolute;
-            right: 0;
-            top: 0;
-            background: rgb(199,21,133);
-            content: "";
-            height: 100%;
-            width: 100%;
-            transition: width .25s ease-in 0s;
-    
-        }
-        
-        &:hover::before {
-            width: 0;
-        }
-  }
     }
-    .product-relative,.experience{
-        h2{
-            @include style-Text(28px,normal,#272727,2px);
+    .product-relative,
+    .experience {
+        h2 {
+            @include style-Text(28px, normal, #272727, 2px);
             position: relative;
             display: inline-block;
-            &::after{
+            &::after {
                 content: "";
                 position: absolute;
                 background: #000;
@@ -105,49 +112,50 @@
                 margin: 20px auto;
                 left: 0;
                 right: 0;
-               }
+            }
         }
     }
-    .gallery-item{
-        img{
+    .gallery-item {
+        img {
             border-bottom: solid 1px #dfe0e1;
         }
-        .card-body{
+        .card-body {
             background-color: #fafafa;
-            h5{
+            h5 {
                 font-size: 1rem;
             }
-            p{
+            p {
                 font-weight: bold;
             }
         }
     }
 }
 
-
 //reponsive
 @media screen and (max-width: 767.98px) {
-    #my-detail-item{
-        .product-relative,.experience{
-            h2{
-            font-size: 25px;
-            &::after{
-                width: 45px;
-                margin: 10px auto;
-               }
+    #my-detail-item {
+        .product-relative,
+        .experience {
+            h2 {
+                font-size: 25px;
+                &::after {
+                    width: 45px;
+                    margin: 10px auto;
+                }
             }
         }
     }
 }
 @media screen and (max-width: 575.98px) {
-    #my-detail-item{
-        .product-relative,.experience{
-            h2{
-            font-size: 20px;
-            &::after{
-                width: 40px;
-                margin: 8px auto;
-               }
+    #my-detail-item {
+        .product-relative,
+        .experience {
+            h2 {
+                font-size: 20px;
+                &::after {
+                    width: 40px;
+                    margin: 8px auto;
+                }
             }
         }
     }
