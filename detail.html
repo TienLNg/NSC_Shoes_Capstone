@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body id="my-detail-item">
+<body id="my-detail-item" onload="getProd()">
      <!-- header  -->
      <header id="Header">
         <!-- thông báo - <header>  -->
@@ -96,7 +96,8 @@
           </div>
         </nav>
       </header>
-    <section class="detail mt-5">
+
+    <section class="detail mt-5" id="Detail">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-7 mb-lg-0 mb-4">
@@ -349,6 +350,9 @@
             }
         })
     </script>
+
+
+    <script src="./js/renderDetail.js/Detail.js"></script>
 </body>
 
 </html>

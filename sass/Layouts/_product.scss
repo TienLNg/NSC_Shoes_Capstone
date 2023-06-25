@@ -20,7 +20,7 @@
     }
     .card {
         width: 265px;
-        height: 440px;
+        // height: 440px;
         box-shadow: 0 0 6px #d0147f;
         border-radius: 5px;
         text-align: center;
@@ -41,20 +41,7 @@
         cursor: pointer;
         opacity: 1;
     }
-    .box .card .image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .box .card .image img {
-        width: 150px;
-        margin: 15px 0;
-        transition: 0.3s;
-       
-    }
-    .box .card:hover .image img {
-        transform: scale(1.1);
-    }
+  
     .box .card .small_card i {
         width: 45px;
         height: 45px;
@@ -87,6 +74,11 @@
         cursor: pointer;
     }
    
+}
+.col-3 {
+    flex: 0 0 20%;
+    padding-bottom: 20px;
+    
 }
 
 @include resposive("large") {
@@ -121,3 +113,23 @@
         }
     }
 }
+
+a {
+    display: block;
+     
+ }
+ .card .image  {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .image img {
+     width: 50%;
+     margin: 15px 0;
+     transition: 0.3s;
+    
+ }
+ .card:hover .image img {
+     transform: scale(1.1);
+ }

@@ -7,14 +7,14 @@ header {
         margin-bottom: 0;
     }
     .navbar-toggler {
-        background-color: $color-blue-2;
-        color: $color-white-1;
+            color: $color-white-1;
     }
     .navbar-brand {
         @include styleText($color-dark-2, $fs-6, $fw-3);
     }
     .icon {
         margin-left: 50px;
+        display: flex;
         .fa-solid {
             color: $color-dark-2;
             font-size: $fs-3;

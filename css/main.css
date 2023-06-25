@@ -45,6 +45,12 @@ textarea:focus-visible {
   transform: scale(1);
 }
 
+.btn-outline-secondary {
+  text-decoration: none;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
 /** SCROLL UP BUTTON */
 .backToTopBtn {
   position: fixed;
@@ -81,7 +87,6 @@ header .info {
   margin-bottom: 0;
 }
 header .navbar-toggler {
-  background-color: #2a73dd;
   color: #f5f9fe;
 }
 header .navbar-brand {
@@ -91,6 +96,7 @@ header .navbar-brand {
 }
 header .icon {
   margin-left: 50px;
+  display: flex;
 }
 header .icon .fa-solid {
   color: #121212;
@@ -219,7 +225,6 @@ header {
 }
 .productsShoes .card {
   width: 265px;
-  height: 440px;
   box-shadow: 0 0 6px #d0147f;
   border-radius: 5px;
   text-align: center;
@@ -239,19 +244,6 @@ header {
   transform: translateX(2px);
   cursor: pointer;
   opacity: 1;
-}
-.productsShoes .box .card .image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.productsShoes .box .card .image img {
-  width: 150px;
-  margin: 15px 0;
-  transition: 0.3s;
-}
-.productsShoes .box .card:hover .image img {
-  transform: scale(1.1);
 }
 .productsShoes .box .card .small_card i {
   width: 45px;
@@ -277,11 +269,17 @@ header {
 }
 .productsShoes h3 {
   margin: 7px 0;
+  color: #eb680b;
 }
 .productsShoes .products_star {
   color: orange;
   margin-bottom: 19px;
   cursor: pointer;
+}
+
+.col-3 {
+  flex: 0 0 20%;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -308,6 +306,27 @@ header {
     text-align: center;
   }
 }
+a {
+  display: block;
+}
+
+.card .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 50%;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+
+.card:hover .image img {
+  transform: scale(1.1);
+}
+
 /* FOOTER */
 .shoesFooter {
   background: #151421;
@@ -387,6 +406,7 @@ header {
 }
 
 .shoesFooter .footer-col a {
+  display: contents;
   text-decoration: none;
   color: #97a1a9;
   opacity: 0.8;
@@ -404,7 +424,9 @@ header {
   border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
 .Copyright p {
+  justify-content: center;
   color: #7f8a94;
+  display: flex;
   font-size: 17px;
   letter-spacing: 0.5px;
   margin: 0;
@@ -413,6 +435,7 @@ header {
 
 .Copyright a {
   text-decoration: none;
+  padding-left: 10px;
   color: rgb(255, 0, 153);
   transition: all 0.3s;
 }
@@ -592,6 +615,26 @@ header {
     padding: 7px 10px;
   }
 }
+.detail__right .select-size {
+  padding: 10px 0;
+  border-bottom: 1px dotted #dfe0e1;
+}
+.detail__right .select-size .btn-secondary {
+  background-color: white;
+  color: #272727;
+}
+.detail__right .select-size .btn-secondary:hover, .detail__right .select-size .btn-secondary:focus {
+  background-color: #272727;
+  color: white;
+  box-shadow: none;
+}
+
+.btn-outline-secondary {
+  text-decoration: none;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
 #my-detail-item .detail__left .col-2 img {
   border: 1px solid #dfe0e1;
   margin-bottom: 10px;
@@ -619,19 +662,6 @@ header {
   padding: 10px 0;
   border-bottom: 1px dotted #dfe0e1;
   display: block;
-}
-#my-detail-item .detail__right .select-size {
-  padding: 10px 0;
-  border-bottom: 1px dotted #dfe0e1;
-}
-#my-detail-item .detail__right .select-size .btn-secondary {
-  background-color: white;
-  color: #272727;
-}
-#my-detail-item .detail__right .select-size .btn-secondary:hover, #my-detail-item .detail__right .select-size .btn-secondary:focus {
-  background-color: #272727;
-  color: white;
-  box-shadow: none;
 }
 #my-detail-item .detail__right .num-select .form-control {
   width: 15%;
@@ -671,7 +701,8 @@ header {
 #my-detail-item .detail__right .btn-add-card:hover::before {
   width: 0;
 }
-#my-detail-item .product-relative h2, #my-detail-item .experience h2 {
+#my-detail-item .product-relative h2,
+#my-detail-item .experience h2 {
   font-size: 28px;
   font-weight: normal;
   color: #272727;
@@ -679,7 +710,8 @@ header {
   position: relative;
   display: inline-block;
 }
-#my-detail-item .product-relative h2::after, #my-detail-item .experience h2::after {
+#my-detail-item .product-relative h2::after,
+#my-detail-item .experience h2::after {
   content: "";
   position: absolute;
   background: #000;
@@ -704,23 +736,31 @@ header {
 }
 
 @media screen and (max-width: 767.98px) {
-  #my-detail-item .product-relative h2, #my-detail-item .experience h2 {
+  #my-detail-item .product-relative h2,
+  #my-detail-item .experience h2 {
     font-size: 25px;
   }
-  #my-detail-item .product-relative h2::after, #my-detail-item .experience h2::after {
+  #my-detail-item .product-relative h2::after,
+  #my-detail-item .experience h2::after {
     width: 45px;
     margin: 10px auto;
   }
 }
 @media screen and (max-width: 575.98px) {
-  #my-detail-item .product-relative h2, #my-detail-item .experience h2 {
+  #my-detail-item .product-relative h2,
+  #my-detail-item .experience h2 {
     font-size: 20px;
   }
-  #my-detail-item .product-relative h2::after, #my-detail-item .experience h2::after {
+  #my-detail-item .product-relative h2::after,
+  #my-detail-item .experience h2::after {
     width: 40px;
     margin: 8px auto;
   }
 }
+.navbar .navbar-collapse {
+  padding-left: 40px;
+}
+
 #my-register .register h1 {
   font-size: 38px;
   font-weight: bold;
@@ -855,4 +895,4 @@ header {
     width: 45px;
     margin: 10px auto;
   }
-}
+}/*# sourceMappingURL=main.css.map */

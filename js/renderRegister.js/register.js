@@ -43,8 +43,8 @@ function register() {
     }).catch(function (err) {
       document.getElementById("txtEmail").style.display = "block";
       document.getElementById("txtEmail").innerHTML = err.response.data.message;
-    }
-    );
+    });
+    
   }
 
 
