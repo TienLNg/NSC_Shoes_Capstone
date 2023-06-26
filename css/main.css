@@ -208,7 +208,7 @@ header {
 .productsShoes {
   margin: 30px;
 }
-.productsShoes h1 {
+.productsShoes .display-4 {
   margin: 35px;
   display: flex;
   justify-content: center;
@@ -217,18 +217,11 @@ header {
   font-size: 50px;
   font-weight: 800;
 }
-.productsShoes .box {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
-}
 .productsShoes .card {
-  width: 265px;
   box-shadow: 0 0 6px #d0147f;
   border-radius: 5px;
   text-align: center;
-  padding: 10px 10px;
+  padding-bottom: 10px;
   background: #e7e7e7;
 }
 .productsShoes .box .card .small_card {
@@ -260,12 +253,15 @@ header {
 }
 .productsShoes .products_text h2 {
   font-size: 30px;
-  margin-top: 15px;
+}
+.productsShoes .products_text h2:hover {
+  text-decoration-line: none;
+  color: rgb(255, 0, 153);
 }
 .productsShoes .products_text p {
   color: #a8a8a8;
   line-height: 21px;
-  margin: 8px 0;
+  margin: 8px;
 }
 .productsShoes h3 {
   margin: 7px 0;
@@ -278,8 +274,16 @@ header {
 }
 
 .col-3 {
-  flex: 0 0 20%;
-  padding-bottom: 20px;
+  padding: 20px 10px;
+}
+
+.image img {
+  width: 75%;
+  transition: 0.3s;
+}
+
+.card:hover .image img {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 992px) {
@@ -306,27 +310,6 @@ header {
     text-align: center;
   }
 }
-a {
-  display: block;
-}
-
-.card .image {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image img {
-  width: 50%;
-  margin: 15px 0;
-  transition: 0.3s;
-}
-
-.card:hover .image img {
-  transform: scale(1.1);
-}
-
 /* FOOTER */
 .shoesFooter {
   background: #151421;
@@ -895,4 +878,4 @@ a {
     width: 45px;
     margin: 10px auto;
   }
-}/*# sourceMappingURL=main.css.map */
+}

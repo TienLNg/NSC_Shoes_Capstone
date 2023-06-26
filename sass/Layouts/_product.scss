@@ -1,30 +1,27 @@
 .productsShoes {
-    // width: 100%;
-    // padding: 25px;
     margin: 30px;
-
     
-    h1 {
+    .display-4 {
         margin: 35px;
         display: flex;
         justify-content: center;
         text-transform: uppercase;
         @include styleText($color-dark-2, $fs-8, $fw-4);
     }
-    .box {
-        // width: 100%;
-        margin: auto;   
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 15px;
-    }
+    // .box {
+    //     // width: 100%;
+    //     // margin: auto;   
+    //     // display: grid;
+    //     // grid-template-columns: 1fr 1fr 1fr 1fr;
+    //     // grid-gap: 10px;
+    // }
     .card {
-        width: 265px;
+        // width: 285px;
         // height: 440px;
         box-shadow: 0 0 6px #d0147f;
         border-radius: 5px;
         text-align: center;
-        padding: 10px 10px;
+        padding-bottom: 10px;
         background: #e7e7e7;
     }
     .box .card .small_card {
@@ -57,12 +54,16 @@
     }
     .products_text h2 {
         font-size: 30px;
-        margin-top: 15px;
+        &:hover {
+        text-decoration-line: none;
+        color: $color-pink-1;
     }
+    }
+   
     .products_text p {
         color: $color-dark-1;
         line-height: 21px;
-        margin: 8px 0;
+        margin: 8px;
     }
     h3 {
         margin: 7px 0;
@@ -76,11 +77,16 @@
    
 }
 .col-3 {
-    flex: 0 0 20%;
-    padding-bottom: 20px;
-    
+    padding:20px 10px;    
 }
-
+.image img {
+     width: 75%;
+     transition: 0.3s;
+    
+ }
+ .card:hover .image img {
+     transform: scale(1.1);
+ }
 @include resposive("large") {
     .productsShoes {
         h1 {
@@ -114,22 +120,6 @@
     }
 }
 
-a {
-    display: block;
-     
- }
- .card .image  {
-     width: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- .image img {
-     width: 50%;
-     margin: 15px 0;
-     transition: 0.3s;
-    
- }
- .card:hover .image img {
-     transform: scale(1.1);
- }
+
+ 
+ 
