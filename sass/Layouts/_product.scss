@@ -81,13 +81,17 @@
     padding:20px 10px;    
 }
 .image img {
-     width: 75%;
+     width: 65%;
      transition: 0.3s;
     
  }
  .card:hover .image img {
      transform: scale(1.1);
  }
+
+
+
+//--------  resposive   ----------
 @include resposive("large") {
     .productsShoes {
         h1 {
@@ -115,8 +119,18 @@
         h1 {
             text-align: center;
         }
-        .box {
+        .box 
+        .row 
+        .col-3 {
             text-align: center;
+            max-width: fit-content;
+        }
+         
+        .row 
+        .col-3
+        .card {
+            text-align: center;
+            max-width: fit-content;
         }
     }
 }
