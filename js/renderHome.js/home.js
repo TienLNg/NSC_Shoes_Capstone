@@ -53,3 +53,4 @@ function hienthiUI(listProduct) {
 
   boxProduct.innerHTML = content.join("");
 }
+
