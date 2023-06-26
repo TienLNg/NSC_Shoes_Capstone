@@ -8,15 +8,15 @@
         text-transform: uppercase;
         @include styleText($color-dark-2, $fs-8, $fw-4);
     }
-    // .box {
-    //     // width: 100%;
-    //     // margin: auto;   
-    //     // display: grid;
-    //     // grid-template-columns: 1fr 1fr 1fr 1fr;
-    //     // grid-gap: 10px;
-    // }
+    .box {
+        // width: 100%;
+        margin: auto;   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
     .card {
-        // width: 285px;
+        width: 265px;
         // height: 440px;
         box-shadow: 0 0 6px #d0147f;
         border-radius: 5px;
@@ -83,10 +83,8 @@
      width: 75%;
      transition: 0.3s;
     
- }
- .card:hover .image img {
-     transform: scale(1.1);
- }
+}
+
 @include resposive("large") {
     .productsShoes {
         h1 {

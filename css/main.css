@@ -209,6 +209,7 @@ header {
   margin: 30px;
 }
 .productsShoes .display-4 {
+.productsShoes .display-4 {
   margin: 35px;
   display: flex;
   justify-content: center;
@@ -275,6 +276,24 @@ header {
 
 .col-3 {
   padding: 20px 10px;
+}
+
+.image img {
+  width: 75%;
+  transition: 0.3s;
+}
+
+.card:hover .image img {
+  transform: scale(1.1);
+}
+
+.image img {
+  width: 75%;
+  transition: 0.3s;
+}
+
+.card:hover .image img {
+  transform: scale(1.1);
 }
 
 .image img {
