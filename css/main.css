@@ -278,7 +278,7 @@ header {
 }
 
 .image img {
-  width: 75%;
+  width: 65%;
   transition: 0.3s;
 }
 
@@ -306,8 +306,13 @@ header {
   .productsShoes h1 {
     text-align: center;
   }
-  .productsShoes .box {
+  .productsShoes .box .row .col-3 {
     text-align: center;
+    max-width: fit-content;
+  }
+  .productsShoes .row .col-3 .card {
+    text-align: center;
+    max-width: fit-content;
   }
 }
 /* FOOTER */
@@ -598,6 +603,10 @@ header {
     padding: 7px 10px;
   }
 }
+.navbar-collapse {
+  justify-content: space-evenly;
+}
+
 .detail__right .select-size {
   padding: 10px 0;
   border-bottom: 1px dotted #dfe0e1;
@@ -878,4 +887,4 @@ header {
     width: 45px;
     margin: 10px auto;
   }
-}
+}/*# sourceMappingURL=main.css.map */

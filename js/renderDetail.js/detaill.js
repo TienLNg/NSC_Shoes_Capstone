@@ -16,19 +16,22 @@ window.onload = function () {
 
 function hienthiUI(listProduct) {
     const boxDetail = document.getElementById("Detail");
-  
-   
-      const content =` 
+    let List =""
+    
+      listProduct.map((shoes) => {
+        const { image, name, price, size, description } = shoes;
+        
+        let content = ` 
                 <div class="row"> 
                   <div class="col-12 col-lg-7 mb-lg-0 mb-4">
                       <div class="detail__left">
                           <div class="row">
                               <div class="col-2">
-                                  <img src="./img/shoes1.png" alt="c" class="img-fluid p-3">
-                                  <img src="./img/shoes2.png" alt="c" class="img-fluid p-3">
-                                  <img src="./img/shoes3.png" alt="c" class="img-fluid p-3">
-                                  <img src="./img/shoes4.png" alt="c" class="img-fluid p-3">
-                                  <img src="./img/shoes5.png" alt="c" class="img-fluid p-3">
+                                  <img src="${image}" alt="c" class="img-fluid p-3">
+                                  <img src="${image}" alt="c" class="img-fluid p-3">
+                                  <img src="${image}" alt="c" class="img-fluid p-3">
+                                  <img src="${image}" alt="c" class="img-fluid p-3">
+                                  <img src="${image}" alt="c" class="img-fluid p-3">
                               </div>
                               <div class="col-10">
                                   <img src="${listProduct.image}" alt="#" class="img-fluid p-3">
