@@ -18,7 +18,7 @@ function hienthiUI(listProduct) {
     const { id, image, name, price, shortDescription, myParam } = shoes;
 
     return `
-            <div class="col-3">
+            <div class="col-lg-4">
               <div class="card">
                 <div class="small_card">
                   <i class="fa-solid fa-heart"></i>
