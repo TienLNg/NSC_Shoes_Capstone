@@ -33,6 +33,10 @@ textarea:focus-visible {
   outline: none;
 }
 
+.col-lg-3 {
+  margin-bottom: 20px;
+}
+
 .btn {
   text-decoration: none;
   padding: 10px 20px;
@@ -286,12 +290,19 @@ header {
   transform: scale(1.1);
 }
 
+.col-lg-3 .col-md-3 .col-sm-3 {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 992px) {
   .productsShoes h1 {
     text-align: center;
   }
   .productsShoes .box {
     text-align: center;
+  }
+  .productsShoes .col-lg-3 {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -305,14 +316,6 @@ header {
 @media screen and (max-width: 576px) {
   .productsShoes h1 {
     text-align: center;
-  }
-  .productsShoes .box .row .col-3 {
-    text-align: center;
-    max-width: fit-content;
-  }
-  .productsShoes .row .col-3 .card {
-    text-align: center;
-    max-width: fit-content;
   }
 }
 /* FOOTER */

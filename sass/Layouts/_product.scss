@@ -9,13 +9,7 @@
         text-transform: uppercase;
         @include styleText($color-dark-2, $fs-8, $fw-4);
     }
-    // .box {
-    //     // width: 100%;
-    //     // margin: auto;   
-    //     // display: grid;
-    //     // grid-template-columns: 1fr 1fr 1fr 1fr;
-    //     // grid-gap: 10px;
-    // }
+   
     .card {
         // width: 285px;
         // height: 440px;
@@ -88,7 +82,9 @@
  .card:hover .image img {
      transform: scale(1.1);
  }
-
+.col-lg-3 .col-md-3 .col-sm-3 {
+    margin-bottom: 20px;
+}
 
 
 //--------  resposive   ----------
@@ -100,6 +96,10 @@
         .box {
             text-align: center;
         }
+        .col-lg-3 {
+            margin-bottom: 20px;
+        }
+
     }
 }
 
@@ -119,19 +119,7 @@
         h1 {
             text-align: center;
         }
-        .box 
-        .row 
-        .col-3 {
-            text-align: center;
-            max-width: fit-content;
-        }
-         
-        .row 
-        .col-3
-        .card {
-            text-align: center;
-            max-width: fit-content;
-        }
+        
     }
 }
 
