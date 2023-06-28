@@ -55,6 +55,10 @@ textarea:focus-visible {
   background-color: #fafafa;
 }
 
+.btn-search {
+  background-color: #f5f9fe;
+}
+
 /** SCROLL UP BUTTON */
 .backToTopBtn {
   position: fixed;
@@ -153,6 +157,63 @@ header #shoesNav .active .nav-link::after {
 
 header {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.dropdown-toggle {
+  color: #fff;
+  border-color: #4e555b;
+  box-shadow: none;
+  border: none;
+}
+.dropdown-toggle:hover {
+  border-color: none;
+  background-color: #f5f9fe;
+}
+
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.input-group {
+  align-items: center;
+  width: 320px;
+  margin-left: 12px;
+}
+
+.dropdown-menu {
+  width: 350px;
+}
+
+.dropdown-item {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #121212;
+  border: 0;
+}
+
+.form-control {
+  height: 56px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.input-group-text {
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #121212;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu .input-group-append .icon-search {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 992px) {
