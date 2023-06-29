@@ -103,7 +103,7 @@ header .navbar-brand {
   font-weight: 700;
 }
 header .icon {
-  margin-left: 50px;
+  justify-content: space-evenly;
   display: flex;
 }
 header .icon .fa-solid {
@@ -188,7 +188,7 @@ header {
 }
 
 .dropdown-item {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #121212;
   border: 0;

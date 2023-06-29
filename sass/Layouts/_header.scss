@@ -13,7 +13,8 @@ header {
         @include styleText($color-dark-2, $fs-6, $fw-3);
     }
     .icon {
-        margin-left: 50px;
+        // margin-left: 50px;
+        justify-content: space-evenly;
         display: flex;
         .fa-solid {
             color: $color-dark-2;
@@ -118,7 +119,7 @@ header {
 }
 
 .dropdown-item {
-    font-size: $fs-3;
+    font-size: $fs-2;
     font-weight: 600;
     color: #121212;
     border: 0;
@@ -150,6 +151,9 @@ header {
 
 
 
+
+
+//-------resposive-------
 
 @include resposive("large") {
     header {

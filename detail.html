@@ -77,7 +77,41 @@
         </ul>
 
         <div class="icon justify-content-center m-0">
-          <i class="fa-solid fa-magnifying-glass pl-4" role="button"></i>
+           <!-- popup icon -->
+           <div class="dropdown">
+            <button
+              class="btn-search btn-secondary dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass pl-4"
+                role="button"
+                href="#"
+              ></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Tìm kiếm</a>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tìm sản phẩm..."
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">
+                    <i
+                      class="fa-solid icon-search fa-magnifying-glass pl-4"
+                      role="button"
+                      href="#"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
           
           <a href="./cart.html"><i class="fa-solid fa-cart-shopping pl-4" role="button"></i></a>
          <a href="#" data-bs-toggle="modal" data-bs-target="#signin" onclick="renderSignin()"><i class="fa-solid fa-regular fa-user pl-4" role="button"></i></a>

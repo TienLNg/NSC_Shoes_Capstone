@@ -1,3 +1,5 @@
+
+
 function getProduct() {
   axios
     .get("https://shop.cyberlearn.vn/api/Product")
@@ -19,7 +21,7 @@ function hienthiUI(listProduct) {
 
     return `
             <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="card">
+              <div class="card" id="card">
                 <div class="small_card">
                   <i class="fa-solid fa-heart"></i>
                   <i class="fa-solid fa-share"></i>
