@@ -120,11 +120,11 @@ function themItem() {
         }
         let image = document.getElementById("img-product").src;
         let quantity = document.getElementById("quantityOrder").value;
-        
+
 
         let newItem = new CartItem(id, name, price, size, image, Number(quantity));
         newItem.tinhTongTien();
-   
+
         if (cart.checkDup(newItem.id) == false || cart.checkDup(newItem.id) == undefined) {
             cart.themSP(newItem);
 
@@ -136,7 +136,7 @@ function themItem() {
             // let quantityAdd=cart.mangSP[index].quantityOrder;
             // cart.mangSP[index].quantityOrdeNUmr+=newItem.quantity;
             cart.mangSP[index].quantityOrder += Number(newItem.quantityOrder);
-           
+
             cart.mangSP[index].total = cart.mangSP[index].quantityOrder * cart.mangSP[index].price;
             setLocalStorage();
         }
@@ -172,15 +172,42 @@ document.getElementById("btn-signin").addEventListener("click", function () {
 
         status = true;
         sessionStorage.setItem("status", JSON.stringify(status));
-        resetForm();
-    }).catch(function (err) {
-        
-        status = false;
-        sessionStorage.setItem("status", JSON.stringify(status));
-        document.getElementById("txtSignin").innerHTML = err.response.data.message
+        sessionStorage.setItem("user", JSON.stringify(user));
+        document.getElementById("email-signin").value = user.email;
+        document.getElementById("password-signin").value = user.password;
+        document.getElementById("email-signin").disabled = true;
+        document.getElementById("password-signin").disabled = true;
+        document.getElementById("txtSignin").innerHTML=""
+   }).catch(function (err) {
+
+    document.getElementById("txtSignin").innerHTML = err.response.data.message
     });
 })
 
 function resetForm() {
     document.getElementById("form-signin").reset();
+    document.getElementById("txtSignin").innerHTML=""
+}
+function logOut() {
+    document.getElementById("email-signin").disabled = false;
+    document.getElementById("password-signin").disabled = false;
+    resetForm();
+    status = false;
+    sessionStorage.setItem("status", JSON.stringify(status));
+
+}
+function renderSignin() {
+
+    let check=JSON.parse(sessionStorage.getItem("status"));
+    if(check==true){
+        let dataUser = JSON.parse(sessionStorage.getItem("user"));
+        document.getElementById("email-signin").value = dataUser.email;
+        document.getElementById("password-signin").value = dataUser.password;
+        document.getElementById("email-signin").disabled = true;
+        document.getElementById("password-signin").disabled = true;
+    }
+    else{
+        resetForm();
+    }
+ 
 }

@@ -80,7 +80,7 @@
           <i class="fa-solid fa-magnifying-glass pl-4" role="button"></i>
           
           <a href="./cart.html"><i class="fa-solid fa-cart-shopping pl-4" role="button"></i></a>
-         <a href="#" data-bs-toggle="modal" data-bs-target="#signin"><i class="fa-solid fa-regular fa-user pl-4" role="button"></i></a>
+         <a href="#" data-bs-toggle="modal" data-bs-target="#signin" onclick="renderSignin()"><i class="fa-solid fa-regular fa-user pl-4" role="button"></i></a>
          <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="signinLabel">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -100,6 +100,7 @@
                   </div>
                   <p id="txtSignin" class="text-danger p-0"></p>
                   <button type="button" class="btn btn-primary" id="btn-signin">Đăng nhập</button>
+                  <button type="button" class="btn btn-primary ms-3" id="btn-logout" onclick="logOut()">Đăng xuất</button>
                   
                   <p class="mt-3">Bạn chưa có tài khoản?</p>
                   <a href="./register.html">Vui lòng đăng ký tài khoản tại đây</a>
