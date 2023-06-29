@@ -78,8 +78,40 @@
 
         <div class="icon">
           <i class="fa-solid fa-magnifying-glass pl-4" role="button"></i>
-          <i class="fa-solid fa-cart-shopping pl-4" role="button"></i>
-          <i class="fa-solid fa-regular fa-user pl-4" role="button"></i>
+          
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping pl-4" role="button"></i></a>
+         <a href="#" data-bs-toggle="modal" data-bs-target="#signin"><i class="fa-solid fa-regular fa-user pl-4" role="button"></i></a>
+         <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="signinLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-center" id="signinLabel" >Đăng nhập</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="form-signin">
+                  <div class="mb-3">
+                    <label for="email-signin" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email-signin">
+                  </div>
+                  <div class="mb-3">
+                    <label for="password-signin" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password-signin">
+                  </div>
+                  <p id="txtSignin" class="text-danger p-0"></p>
+                  <button type="button" class="btn btn-primary" id="btn-signin">Đăng nhập</button>
+                  
+                  <p class="mt-3">Bạn chưa có tài khoản?</p>
+                  <a href="./register.html">Vui lòng đăng ký tài khoản tại đây</a>
+                 
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div> 
         </div>
       </div>
     </nav>
@@ -311,7 +343,10 @@
   </script>
 
   <!-- <script src="./js/renderDetail.js/Detail.js"></script> -->
+  <script src="./js/renderCart.js/cartitem.js"></script>
+  <script src="./js/renderCart.js/DSitem.js"></script>
   <script src="./js/renderDetail.js/detaill.js"></script>
+  
 </body>
 
 </html>

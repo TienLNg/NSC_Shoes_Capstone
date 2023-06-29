@@ -104,37 +104,9 @@
             <div class="row">
                 <div class="col-md-12 col-lg-9">
                     <div class="cart__detail">
-                        <p>Bạn đang có <span class="fw-bold">1 sản phẩm</span> trong giỏ hàng</p>
-                        <div class="container cart--table">
-                            <div class="row align-items-center">
-                                <div class="col-3 col-md-2 ">
-                                    <img src="./img/shoes6.png" alt="redshoe" class="img-fluid p-3">
-                                </div>
-                                <div class="col-9 col-md-4">
-                                    <p>
-                                        Giày Jordan 1 Retro Low OG Travis Scott Olive</p>
-                                    <span class="item--size">42</span>
-                                </div>
-                                <div class="col-md-2 col-6">
-                                    <div class="num-select my-3">
-                                        <div class="input-group mb-3">
-                                            <button class="btn btn-outline-secondary" type="button"
-                                                id="button-addon1">-</button>
-                                            <input type="text" class="form-control text-center p-0" value="1">
-                                            <button class="btn btn-outline-secondary" type="button"
-                                                id="button-addon2">+</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-6 text-center">
-                                    <p class="m-0">3,450,000₫</p>
-                                </div>
-                                <div class="col-md-2 col-12 text-center">
-                                    <p>Thành tiền</p>
-                                    <p class="num--total">3,450,000₫</p>
-                                    <i class="fa fa-trash-alt"></i>
-                                </div>
-                            </div>
+                        <p>Bạn đang có <span id="slsp" class="fw-bold">1 sản phẩm</span> trong giỏ hàng</p>
+                        <div class="container cart--table" id="cart--table">
+                        
                         </div>
                         <div class="cart--note">
                             <div class="row">
@@ -169,14 +141,15 @@
                         <h3 class="py-3 m-0">Thông tin đơn hàng</h3>
                         <div class="total--pay py-3 d-flex  justify-content-between">
                             <span>Tổng tiền:</span>
-                            <span>3,450,000₫</span>
+                            <span id="total-pay"></span>
+                            <span>$</span>
                         </div>
                         <p class="py-3 m-0">Bạn có thể nhập mã giảm giá ở trang thanh toán</p>
                         <button class="w-100"><span class="fw-bold">THANH TOÁN</span></button>
                     </div>
                 </div>
             </div>
-            <a href="#" class="continute--buy">
+            <a href="./index.html" class="continute--buy">
                 <p class="my-3">Tiếp tục mua hàng<i class="fa fa-arrow-right ms-2"></i>
                 </p>
             </a>
@@ -186,48 +159,8 @@
 
     <section class="product-relative text-center my-5">
         <h2>Có thể bạn thích</h2>
-        <div class="gallery-item">
-            <div class="container">
-                <div class="row mt-1 mt-md-5">
-                    <div class="col-6 col-lg-3 px-2 my-3">
-                        <div class="card">
-                            <img src="./img/shoes5.png" class="card-img-top img-fluid p-3" alt="product1">
-                            <div class="card-body">
-                                <h5 class="card-title">Giày Nike Kyrie 8 “Multi-Color” Painting</h5>
-                                <p class="card-text">2,650,000₫</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 px-2 my-3">
-                        <div class="card">
-                            <img src="./img/shoes3.png" class="card-img-top p-3" alt="product1">
-                            <div class="card-body">
-                                <h5 class="card-title">Giày Nike Kyrie 8 “Multi-Color” Painting</h5>
-                                <p class="card-text">2,650,000₫</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 px-2 my-3">
-                        <div class="card">
-                            <img src="./img/shoes7.png" class="card-img-top p-3" alt="product1">
-                            <div class="card-body">
-                                <h5 class="card-title">Giày Nike Kyrie 8 “Multi-Color” Painting</h5>
-                                <p class="card-text">2,650,000₫</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 px-2 my-3">
-                        <div class="card">
-                            <img src="./img/shoes1.png" class="card-img-top p-3" alt="product1">
-                            <div class="card-body">
-                                <h5 class="card-title">Giày Nike Kyrie 8 “Multi-Color” Painting</h5>
-                                <p class="card-text">2,650,000₫</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="gallery-item" id="product-relative_list">
+           
         </div>
     </section>
     <section class="experience text-center mt-5 mb-5">
@@ -338,6 +271,10 @@
 
      <!-- Axios  -->
      <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+     <script src="./js/renderCart.js/cartitem.js"></script>
+     <script src="./js/renderCart.js/DSitem.js"></script>
+     <script src="./js/renderCart.js/giohang.js"></script>
 
      
 </body>
