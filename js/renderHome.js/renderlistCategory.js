@@ -12,20 +12,21 @@ axios
     console.log(error);
   });
 
-//   window.setCategory = setCategory;
 
   let activeCategory = "all";
 
 function  renderUI (content) {
-    const listFoodbyCategory = getListFoodbyCategory(activeCategory);
-  
+    const listProductbyCategory = getListProductbyCategory(activeCategory, content);
+    hienthiUI(listProductbyCategory);
+
     const listCategory = getListCategory(content);
     renderlistCategory(listCategory);
+  debugger;
   
   };
 
 
-const setCategory = (category) => {
+function setCategory (category) {
     activeCategory = category;
   
     // console.log("[typeCategory]", activeCategory);
@@ -33,14 +34,13 @@ const setCategory = (category) => {
   };
 
 
-function getListFoodbyCategory (category, listProduct) {
-    if (category === "all") return listProduct;
-  
-    //lọc lấy ra những item thoả mãn điều kiện return về true
+function getListProductbyCategory (category, listProduct) {
+    if (category.toLowerCase() === "All") return listProduct;
+   
     const newListProduct = listProduct.filter((shoes) => {
-      //bắt buộc có return
-      return shoes.category === category; //điều kiện
+      return shoes.category === category; 
     });
+    
     return newListProduct;
   }; 
     
@@ -60,6 +60,8 @@ function getListCategory(listProduct) {
     return listCategory;
   };
 
+
+
 function renderlistCategory(listCategory) {
   const isActive = (category) => {
     return category.toLowerCase() === activeCategory.toLowerCase();
@@ -73,3 +75,6 @@ function renderlistCategory(listCategory) {
 
   document.getElementById("category").innerHTML = contentCategory.join('');
 }
+
+
+renderUI();
